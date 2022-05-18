@@ -15,28 +15,28 @@
 
         <h1>Passinho do Romano</h1>
 
-            <textarea name="msg" id="input1" cols="30" rows="15" placeholder="Digite sua mensagem"></textarea > <br>
+            <textarea name="mensagem" id="mensagem-usuario" cols="30" rows="15" placeholder="Digite sua mensagem"></textarea > <br>
 
-                <input type="radio" id="b64" name="op" value="op">
+                <input type="radio" checked="checked" id="b64" name="op" value="op">
             <label for="op">Base 64</label>
 
-            <input type="radio" id="cifraC" name="op" value="op">
+            <input type="radio"  id="cifraC" name="op" value="op">
             <label for="op">Cifra de Cézar</label> <br>
             <section id="deslocamento"> 
                 <input type="number"  style="display: none;" id="escolha">
             </section>
 
-            <input type="radio" id="codi" name="cripto" value="cripto">
+            <input type="radio" id="codi" checked="checked" name="cripto" value="cripto">
             <label for="op">Codificar</label>
 
             <input type="radio" id="decodi" name="cripto" value="descripto">
             <label for="op">Decodificar</label> <br>
 
-            <button id="botao">Ação</button>
+            <button id="botao">Codificar mensagem</button>
             
             
 
-            <textarea name="msg" id="input2" cols="30" rows="15"></textarea>
+            <textarea name="mensagem" id="resultado" cols="30" rows="15"></textarea>
         
 
     </form>
