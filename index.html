@@ -11,35 +11,34 @@
 </head>
 
 <body>
-    <form action="" id="form">
 
-        <h1>Passinho do Romano</h1>
+        <h1>Codifique/Decodifique sua mensagem</h1>
+        <form action="#" id="form">
 
-            <textarea name="mensagem" id="mensagem-usuario" cols="30" rows="15" placeholder="Digite sua mensagem"></textarea > <br>
+            <textarea name="mensagem" id="mensagem-usuario" cols="20" rows="7"
+                placeholder="Digite sua mensagem"></textarea> <br>
+            <fieldset>
+                <input class="botoes" type="radio" checked="checked" class="mensagens" id="b64" name="op" value="op">
+                <label  for="op">Base 64</label> 
 
-                <input type="radio" checked="checked" id="b64" name="op" value="op">
-            <label for="op">Base 64</label>
+                <input class="botoes" type="radio" id="cifraC" name="op" value="op">
+                <label  for="op">Cifra de Cézar</label> <br> 
 
-            <input type="radio"  id="cifraC" name="op" value="op">
-            <label for="op">Cifra de Cézar</label> <br>
-            <section id="deslocamento"> 
-                <input type="number"  style="display: none;" id="escolha">
-            </section>
+                <input class="botoes" type="number"  style="display: none;" id="escolha"> 
 
-            <input type="radio" id="codi" checked="checked" name="cripto" value="cripto">
-            <label for="op">Codificar</label>
+                <input class="botoes" type="radio" id="codi" checked="checked" name="cripto" value="cripto">
+                <label  for="op">Codificar</label> 
 
-            <input type="radio" id="decodi" name="cripto" value="descripto">
-            <label for="op">Decodificar</label> <br>
+                <input class="botoes" type="radio" id="decodi" name="cripto" value="descripto">
+                <label for="op">Decodificar</label> <br>
 
-            <button id="botao">Codificar mensagem</button>
-            
-            
+                <button id="botao">Codificar mensagem</button>
+            </fieldset>
 
-            <textarea name="mensagem" id="resultado" cols="30" rows="15"></textarea>
-        
 
-    </form>
+            <textarea name="mensagem" disabled id="resultado" cols="20" rows="7"></textarea>
+
+        </form>
 </body>
 
 </html>

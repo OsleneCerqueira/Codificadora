@@ -7,7 +7,7 @@ document.getElementById("botao").addEventListener("click", acao);
 
 const deslocamento = document.getElementById("escolha");
 
-// Evita o comportamento padrao do FORM e executa a função do botão marcado
+// Evita o comportamento padrao do FORM e executa a função do botão marcado.
 function acao(event) {
     event.preventDefault();
     if (event && cifraC.checked) {
@@ -25,7 +25,7 @@ function acao(event) {
 
 }
 
-// Adiciona uma sessao para digitar o deslocamento caso esteva selecionado Cifra de Cezar
+// Adiciona uma sessao para digitar o deslocamento caso esteva selecionado Cifra de Cezar.
 function novaSessao() {
     if (document.getElementById("cifraC").checked) {
         escolha.style.display = "block"
